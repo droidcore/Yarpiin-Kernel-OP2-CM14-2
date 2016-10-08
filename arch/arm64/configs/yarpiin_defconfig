@@ -4104,6 +4104,12 @@ CONFIG_QMI_ENCDEC=y
 # CONFIG_STRICT_MEMORY_RWX is not set
 
 #
+# Hotplug
+#
+
+CONFIG_HIMA_HOTPLUG=y 
+
+#
 # Additional Settings
 #
 
