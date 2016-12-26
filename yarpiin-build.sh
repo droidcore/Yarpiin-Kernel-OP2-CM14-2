@@ -25,7 +25,7 @@ YARPIIN_VER="$BASE_YARPIIN_VER$VER"
 
 # Vars
 export LOCALVERSION=-`echo $YARPIIN_VER`
-export CROSS_COMPILE="$TOOLCHAIN_DIR/aarch64-linux-android-4.9-kernel/bin/aarch64-linux-android-"
+export CROSS_COMPILE="$TOOLCHAIN_DIR/aarch64-linux-android-6.x/bin/aarch64-linux-android-"
 export ARCH=arm64
 export SUBARCH=arm64
 export KBUILD_BUILD_USER=yarpiin
