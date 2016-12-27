@@ -66,9 +66,6 @@ function make_modules {
 		find $KERNEL_DIR -name '*.ko' -exec cp -v {} $MODULES_DIR \;
 }
 
-function make_dtb { 
-    $REPACK_DIR/tools/dtbToolCM -2 -o $REPACK_DIR/$DTBIMAGE -s 2048 -p scripts/dtc/ arch/arm64/boot/ 
-} 
 
 function make_zip {
 		cd $REPACK_DIR
@@ -124,7 +121,6 @@ case "$dchoice" in
 	y|Y)
 		make_kernel
 		make_modules
-		make_dtb
 		break
 		;;
 	n|N )
