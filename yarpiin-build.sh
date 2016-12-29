@@ -55,7 +55,7 @@ function make_kernel {
 		echo
 		make $DEFCONFIG
 		make $THREAD
-		cp -vr $ZIMAGE_DIR/$KERNEL $REPACK_DIR/zImage
+		cp -vr $ZIMAGE_DIR/$KERNEL $REPACK_DIR/Image.gz-dtb
 }
 
 function make_modules {
